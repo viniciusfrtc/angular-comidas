@@ -1,0 +1,10 @@
+
+<div class="display">
+  <div *ngFor="let imagem of imagens" (click)="mostrarImgAmpliada(imagem)">
+    <img class="imgPequena" src="{{imagem.link}}" alt="">
+    <h1>{{imagem.descricao}}</h1>
+  </div>
+</div>
+
+<app-comida-escolhida *ngIf="jaClicou" [imagemAmpliada]="imgQueSeraAmpliada"></app-comida-escolhida>
+

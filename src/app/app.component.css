@@ -1,0 +1,19 @@
+.display {
+    display: flex;
+    background-color: grey;
+    height: 30vh;
+    padding: 1em;
+}
+
+
+div div {
+    padding: 2em;
+    background-color: wheat;
+    margin: 0 5%;
+}
+
+
+.imgPequena {
+    width: 50%;
+}
+
