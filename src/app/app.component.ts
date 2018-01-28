@@ -25,15 +25,23 @@ export class AppComponent {
     {
       link:'http://institucional.confianca.com.br/wp-content/uploads/2016/10/strognofe-confianca.png', 
       descricao: 'strogonoff'
-    }   
-    
+    }
   ];
 
   imgQueSeraAmpliada;
 
+  novaImg = {
+    link: '',
+    descricao: ''
+  };
+
   mostrarImgAmpliada = function(imagem) {
       this.jaClicou = true; 
-      this.imgQueSeraAmpliada = imagem;
+      this.imgQueSeraAmpliada = imagem;      
+  }
+
+  adicionarNovaImg = function() {
+    this.imagens.push(this.novaImg);
   }
 
 

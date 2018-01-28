@@ -17,3 +17,16 @@ div div {
     width: 50%;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form div {
+    margin: 0.5em;
+}
+
+form button {
+    margin: 0.5em;
+}

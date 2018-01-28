@@ -1,4 +1,17 @@
 
+<form>
+  <div>
+      <input [(ngModel)]="novaImg.link" type="text" name="link" placeholder="link da imagem">
+  </div>
+  
+  <div>
+      <input [(ngModel)]="novaImg.descricao" type="text" name="descricao" placeholder="descrição da imagem">
+  </div>
+
+  <button (click)=adicionarNovaImg()>Salvar</button>
+</form>
+
+
 <div class="display">
   <div *ngFor="let imagem of imagens" (click)="mostrarImgAmpliada(imagem)">
     <img class="imgPequena" src="{{imagem.link}}" alt="">
